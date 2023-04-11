@@ -40,12 +40,13 @@ int main(){
     // cout<<*p<<endl;
     // cout<<**p<<endl;
 
-    int x[] = {1,2,3,4};
-    int *ptr ;
-    ptr = x;
-    int *ptr1 = &x[0];
-    cout<<ptr<<" "<<ptr1;
+    // int x[] = {1,2,3,4};
+    // int *ptr ;
+    // ptr = x;
+    // int *ptr1 = &x[0];
+    // cout<<ptr<<" "<<ptr1;
 
+    
 
 
 
