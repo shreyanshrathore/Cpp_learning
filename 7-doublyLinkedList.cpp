@@ -56,6 +56,16 @@ void printatpos(node* head, int val, int pos){
     temp->prev = head;
 }
 
+void last(node* head , int val){
+    node* temp = new_one(val);
+    node* first = head;
+    while(head->next != first){
+        head = head ->next;
+    }
+    first->prev =
+
+}
+
 
 int main(){
     node* head = NULL;
