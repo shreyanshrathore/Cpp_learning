@@ -14,6 +14,33 @@ struct node{
 //     return head;
 // }
 
+3
+node* temp = new node();
+temp ->data = 3;
+temp->next = heads;
+heads = 3;
+
+
+
+2    [6-7]  index = 4
+3 4 5 6 -----2------ 7 8 9 -->  linked list  == head = heads
+
+node* temp = new node();
+temp->data = 2;
+
+2->next =7
+
+int cnt = 0;
+while(cnt == 4){
+    heads = heads->next;
+}
+
+3 4 5 6-> 2-> 7 8 9
+|      |
+head    heads->next = temp ->next=  7 [head->next]
+    temp->next = heads->next
+    heads->next = temp
+
 
 node* push(node **head_ref , int newdata){
     node* temp = new node();
@@ -22,18 +49,17 @@ node* push(node **head_ref , int newdata){
     *head_ref = temp;
 }
 
-void print(node* n){
-    while(n  != NULL){
-        cout<<n->data<<" ";
-        n = n ->next;
-
+void print(node* head){
+    while(head  != NULL){
+        cout<<head->data<<" ";
+        head = head ->next;
     }
 }
 
 void insert(node** head , int value, int pos){
     node* temp = new node();
     temp ->data= value;
-    temp ->next = NULL;
+    // temp ->next = NULL;
 
     int k = 1;
     node* curr = *head;

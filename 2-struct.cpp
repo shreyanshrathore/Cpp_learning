@@ -15,6 +15,7 @@ struct teacher{
 };
 int main(){
     teacher num[2];
+    
     for(int i=0;i<2;i++){
         num[i] = {1,"shreyansh", 20, 1000000, true, "male"};
     }
